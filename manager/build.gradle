@@ -1,0 +1,6 @@
+dependencies{
+    // 添加依赖
+    compile project(":entity")
+    compile libs.mysql
+    compile project(":swagger")
+}

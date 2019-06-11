@@ -1,0 +1,15 @@
+spring:
+  datasource:   # 设置数据传输过程的字符编码
+    url: jdbc:mysql://localhost:3306/manager?user=root&password=root&useUnicode=true&characterEncoding=utf-8
+
+  jackson:
+    date-format: YYYY-MM-dd HH:mm:ss
+    time-zone: GMT+8
+
+  jpa:
+    show-sql: true    # 是否展示SQL语句
+    database-platform: org.hibernate.dialect.MySQLDialect
+
+server:
+  port: 8081
+  context-path: /manager   # 路径 默认先找配置文件，再找controller，然后就是方法，组合在一起就是访问路径
