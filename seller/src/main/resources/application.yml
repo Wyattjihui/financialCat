@@ -1,0 +1,10 @@
+server:
+  port: 8082
+
+rpc:
+  manager:
+    url: http://localhost:8081/manager/   # 定义连接服务端地址
+
+logging:
+  level:
+    com.googlecode.jsonrpc4j: debug

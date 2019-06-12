@@ -8,7 +8,7 @@ import org.springframework.context.annotation.Import;
 
 @SpringBootApplication
 @EntityScan(basePackages = {"com.kw.entity"})
-@Import(SwaggerConfiguration.class)
+@Import(SwaggerConfiguration.class)  /* 在manager中要想使用SwaggerConfiguration配置类，需要import进来 */
 public class ManagerApplication {
     public static void main(String[] args) {
         SpringApplication.run(ManagerApplication.class);
